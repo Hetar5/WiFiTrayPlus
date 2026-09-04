@@ -5,7 +5,7 @@
 *.userosscache
 *.sln.docstates
 
-# Build results
+# Build
 bin/
 obj/
 
@@ -17,7 +17,7 @@ TestResults/
 packages/
 *.nupkg
 
-# Publish output
+# Publish
 publish/
 
 # OS files
