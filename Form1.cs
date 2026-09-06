@@ -6,8 +6,8 @@ namespace WiFiTrayPlus2
     public partial class Form1 : Form
     {
 
-      
-        
+
+
         private void zakończToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -18,17 +18,17 @@ namespace WiFiTrayPlus2
             ShowWifiInfo();
         }
         private WifiInfoForm? wifiInfoForm;
-        
+
         private System.Windows.Forms.Timer wifiTimer;
-   
- 
+
+
         public Form1()
         {
             InitializeComponent();
 
- 
 
-         
+
+
 
             wifiTimer = new System.Windows.Forms.Timer();
             wifiTimer.Interval = 1000;
@@ -410,9 +410,27 @@ namespace WiFiTrayPlus2
             }
         }
 
+        private void otwórzUstawieniaSieciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = "ms-settings:network",
+                UseShellExecute = true
+            });
+        }
 
+        private void rozwiążProblemyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = "rundll32.exe",
+                Arguments = "ndfapi,NdfRunDllDiagnoseIncident",
+                UseShellExecute = true
+            });
+        }
     }
-            }
+    }
+
         
 
     

@@ -31,8 +31,10 @@
             components = new System.ComponentModel.Container();
             notifyIcon1 = new NotifyIcon(components);
             contextMenuStrip1 = new ContextMenuStrip(components);
-            zakończToolStripMenuItem = new ToolStripMenuItem();
             informacjeOWiFiToolStripMenuItem = new ToolStripMenuItem();
+            zakończToolStripMenuItem = new ToolStripMenuItem();
+            otwórzUstawieniaSieciToolStripMenuItem = new ToolStripMenuItem();
+            rozwiążProblemyToolStripMenuItem = new ToolStripMenuItem();
             contextMenuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -44,24 +46,38 @@
             // 
             // contextMenuStrip1
             // 
-            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { informacjeOWiFiToolStripMenuItem, zakończToolStripMenuItem });
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { informacjeOWiFiToolStripMenuItem, zakończToolStripMenuItem, otwórzUstawieniaSieciToolStripMenuItem, rozwiążProblemyToolStripMenuItem });
             contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(183, 70);
+            contextMenuStrip1.Size = new Size(224, 92);
             contextMenuStrip1.Opening += contextMenuStrip1_Opening;
-            // 
-            // zakończToolStripMenuItem
-            // 
-            zakończToolStripMenuItem.Name = "zakończToolStripMenuItem";
-            zakończToolStripMenuItem.Size = new Size(180, 22);
-            zakończToolStripMenuItem.Text = "Zakończ";
-            zakończToolStripMenuItem.Click += zakończToolStripMenuItem_Click;
             // 
             // informacjeOWiFiToolStripMenuItem
             // 
             informacjeOWiFiToolStripMenuItem.Name = "informacjeOWiFiToolStripMenuItem";
-            informacjeOWiFiToolStripMenuItem.Size = new Size(182, 22);
+            informacjeOWiFiToolStripMenuItem.Size = new Size(223, 22);
             informacjeOWiFiToolStripMenuItem.Text = "Informacje oWiFi";
             informacjeOWiFiToolStripMenuItem.Click += informacjeOWiFiToolStripMenuItem_Click;
+            // 
+            // zakończToolStripMenuItem
+            // 
+            zakończToolStripMenuItem.Name = "zakończToolStripMenuItem";
+            zakończToolStripMenuItem.Size = new Size(223, 22);
+            zakończToolStripMenuItem.Text = "Zakończ";
+            zakończToolStripMenuItem.Click += zakończToolStripMenuItem_Click;
+            // 
+            // otwórzUstawieniaSieciToolStripMenuItem
+            // 
+            otwórzUstawieniaSieciToolStripMenuItem.Name = "otwórzUstawieniaSieciToolStripMenuItem";
+            otwórzUstawieniaSieciToolStripMenuItem.Size = new Size(223, 22);
+            otwórzUstawieniaSieciToolStripMenuItem.Text = "Otwórz ustawienia sieci";
+            otwórzUstawieniaSieciToolStripMenuItem.Click += otwórzUstawieniaSieciToolStripMenuItem_Click;
+            // 
+            // rozwiążProblemyToolStripMenuItem
+            // 
+            rozwiążProblemyToolStripMenuItem.Name = "rozwiążProblemyToolStripMenuItem";
+            rozwiążProblemyToolStripMenuItem.Size = new Size(223, 22);
+            rozwiążProblemyToolStripMenuItem.Text = "Rozwiąż problemy";
+            rozwiążProblemyToolStripMenuItem.Click += rozwiążProblemyToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -82,5 +98,7 @@
         private ContextMenuStrip contextMenuStrip1;
         private ToolStripMenuItem zakończToolStripMenuItem;
         private ToolStripMenuItem informacjeOWiFiToolStripMenuItem;
+        private ToolStripMenuItem otwórzUstawieniaSieciToolStripMenuItem;
+        private ToolStripMenuItem rozwiążProblemyToolStripMenuItem;
     }
 }
