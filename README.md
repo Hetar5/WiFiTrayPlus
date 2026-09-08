@@ -21,7 +21,7 @@ Instead of the standard Windows Wi-Fi indicator, WiFiTrayPlus uses clear, color-
 The **Informacje o WiFi** option provides detailed information about the current Wi-Fi connection.
 
 ## Tray menu
-<img src="Screenshots/WiFiTrayPlus-menu.png" alt="WiFiTrayPlus menu" width="500">
+<img src="Screenshots/WiFiTrayPlus-menu.png" alt="WiFiTrayPlus menu" width="400">
 Right-click the WiFiTrayPlus icon to access:
 
 - **Informacje o WiFi** — displays information about the current Wi-Fi connection.
