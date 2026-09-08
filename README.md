@@ -4,7 +4,7 @@
 WiFiTrayPlus is a lightweight Windows utility that displays the current Wi-Fi signal strength directly in the system tray.
 
 Instead of the standard Windows Wi-Fi indicator, WiFiTrayPlus uses clear, color-coded icons representing five signal levels, making the current signal strength easy to recognize at a glance.
-![WiFiTrayPlus icon](Screenshots/WiFiTrayPlus-icon.png)
+<img src="Screenshots/WiFiTrayPlus-icon.png" alt="WiFiTrayPlus icon" width="400">
 ## Features
 
 - Five Wi-Fi signal strength levels.
